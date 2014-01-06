@@ -86,7 +86,7 @@ class Createthumbnails extends JApplicationCli
 
 		$image = new JImage($path);
 	
-		$image->createThumbs($size);
+		$image->createThumbs($size, $method, $thumbsFolder);
 		$this->out('Thumbnail created');
 		$this->out();
 
