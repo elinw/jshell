@@ -92,7 +92,7 @@ class Adduser extends JApplicationCli
 		$user->bind($array);
 		$user->save();
 
-		$grouparray = explode(',', $groups);var_dump($grouparray);
+		$grouparray = explode(',', $groups);
 		JUserHelper::setUserGroups($user->id, $grouparray);
 		foreach ($grouparray as $groupId)
 		{
